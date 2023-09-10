@@ -3,6 +3,7 @@
 import { signIn, signOut, useSession } from "next-auth/react";
 
 import { Button } from "../_components/ui/button";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 const HomePage = () => {
@@ -39,6 +40,10 @@ const HomePage = () => {
           )}
         </div>
       </div>
+      <Link href={'/myscroll'} scroll={false}>Go to Home</Link>
+      
+      <Link href={'/scroll'} scroll={false}>Go to Home</Link>
+      
     </>
   );
 };
